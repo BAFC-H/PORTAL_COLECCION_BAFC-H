@@ -16,11 +16,11 @@ st.markdown("Bienvenido al portal de consulta pública.")
 @st.cache_resource
 def iniciar_conexion():
     return mysql.connector.connect(
-        host="bafc-h-bafch2026.k.aivencloud.com",
-        port=20532, # Ajustá tu puerto si es necesario
-        database="bafch_coleccion",
-        user="usuario_consulta",
-        password="usuario_consulta" # Poné la contraseña de tu usuario_consulta
+        host=st.secrets["mysql"]["host"],
+        user=st.secrets["mysql"]["user"],
+        password=st.secrets["mysql"]["password"],
+        database=st.secrets["mysql"]["database"],
+        port=st.secrets["mysql"]["port"]
     )
 
 conexion = iniciar_conexion()
