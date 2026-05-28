@@ -6,7 +6,7 @@ import pandas as pd
 st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wide")
 
 # 2. Mostramos el logo oficial en pantalla
-st.image("logo_BAFCH.jpg", width=150) # Podés cambiar el número 150 para achicarlo o agrandarlo
+st.image("logo_BAFCH.JPG", width=150) # Podés cambiar el número 150 para achicarlo o agrandarlo
 
 # 3. Título institucional sin emojis de plantas
 st.title("Búsqueda Avanzada - Colección BAFC-H")
