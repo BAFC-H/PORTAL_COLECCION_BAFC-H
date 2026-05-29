@@ -133,3 +133,31 @@ if criterio:
         st.warning("Por favor, ingresá términos de búsqueda válidos.")
 else:
     st.info("Ejemplo: Escribí 'Agaricus Argentina' para ver las colecciones de ese género en el país.")
+    # --- PIE DE PÁGINA (Autoría y Licencia) ---
+st.markdown("---") # Esto dibuja una línea horizontal sutil para separar el buscador del final
+
+st.markdown(
+    """
+    <div style="text-align: center; margin-top: 50px;">
+        <p style="color: #826F52; font-size: 16px;">
+            <strong>Colección BAFC-H</strong> - Instituto de Micología y Botánica (InMiBo)
+        </p>
+        <p style="color: #3E362E; font-size: 14px;">
+            Desarrollo y diseño de base de datos por <strong>Federico Mazzone Pereira</strong>.
+        </p>
+        <div style="margin-top: 15px;">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+                <img alt="Licencia Creative Commons" style="border-width:0; margin-bottom: 5px;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+            </a>
+            <br />
+            <span style="color: #3E362E; font-size: 12px;">
+                Esta obra y sus datos están bajo una 
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="color: #A9B709; text-decoration: none; font-weight: bold;">
+                    Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
+                </a>.
+            </span>
+        </div>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
