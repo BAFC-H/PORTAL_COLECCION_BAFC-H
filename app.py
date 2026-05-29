@@ -143,7 +143,7 @@ st.markdown(
             <strong>Colección BAFC-H</strong> - Instituto de Micología y Botánica (InMiBo)
         </p>
         <p style="color: #3E362E; font-size: 14px;">
-            Desarrollo y diseño de base de datos por <strong>Federico Mazzone Pereira</strong>.
+            Desarrollo y diseño de base de datos por <strong>Susana Pereira</strong>.
         </p>
         <div style="margin-top: 15px;">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
