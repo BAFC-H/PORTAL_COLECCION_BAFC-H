@@ -134,7 +134,7 @@ if criterio:
 else:
     st.info("Ejemplo: Escribí 'Agaricus Argentina' para ver las colecciones de ese género en el país.")
 # --- PIE DE PÁGINA (Autoría y Licencia) ---
-st.markdown("---") # Línea divisoria
+st.markdown("---") # Esto dibuja una línea horizontal sutil para separar el buscador del final
 
 st.markdown(
     """
@@ -145,11 +145,9 @@ st.markdown(
         <p style="color: #826F52; font-size: 16px; margin-top: 0; margin-bottom: 15px;">
             Instituto de Micología y Botánica (InMiBo)
         </p>
-        
         <p style="color: #3E362E; font-size: 14px;">
             Desarrollo y diseño de base de datos por <strong>Federico Mazzone Pereira</strong>.
         </p>
-        
         <div style="margin-top: 15px;">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
                 <img alt="Licencia Creative Commons" style="border-width:0; margin-bottom: 5px;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
