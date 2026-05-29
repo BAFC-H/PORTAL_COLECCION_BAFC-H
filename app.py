@@ -8,7 +8,7 @@ st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wid
 # 2. Mostramos el logo oficial en pantalla
 st.image("logo_BAFCH.JPG", width=150)
 
-# 3. Título institucional Y TEXTURA DE FONDO
+# 3. Título institucional, TEXTURA DE FONDO y diseño de carteles
 st.markdown(
     """
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +31,23 @@ st.markdown(
         font-weight: normal !important;
         margin-top: 15px !important;
         margin-bottom: 5px !important;
+    }
+    
+    /* Fondo del cartel de información (st.info) */
+    div[data-testid="stAlert"] {
+        background-color: #826F52 !important;
+        border: none !important; /* Le saca cualquier borde celeste */
+    }
+    
+    /* Texto adentro del cartel */
+    div[data-testid="stAlert"] p {
+        color: #A9B709 !important;
+        font-weight: bold !important;
+    }
+    
+    /* Color del iconito de información */
+    div[data-testid="stAlert"] svg {
+        fill: #A9B709 !important;
     }
     </style>
     
@@ -55,7 +72,7 @@ def iniciar_conexion():
 conexion = iniciar_conexion()
 
 # Barra de búsqueda única y potente
-criterio = st.text_input("🔍 Escribí tu búsqueda (separe los términos con espacios):", "")
+criterio = st.text_input("🔍 Escribí tu búsqueda (separa los términos con espacios):", "")
 
 if criterio:
     # 1. Separamos la frase en palabras individuales y eliminamos conectores
