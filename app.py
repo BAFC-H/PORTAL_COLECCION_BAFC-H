@@ -2,33 +2,33 @@ import streamlit as st
 import mysql.connector
 import pandas as pd
 
-# 1. Configuración visual de la pestaña (podés dejar un hongo de ícono temporal o usar el logo)
+# 1. Configuración visual de la pestaña (SIEMPRE PRIMERO)
 st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wide")
 
-# Traer la tipografía Fredericka the Great y aplicar el color al título
+# 2. Mostramos el logo oficial en pantalla
+st.image("logo_BAFCH.JPG", width=150)
+
+# 3. Título institucional con tipografía y color personalizados
 st.markdown(
     """
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-    
     .titulo-personalizado {
-        font-family: 'Fredericka the Great', serif;
-        color: #A9B709;
-        font-size: 45px;
-        margin-bottom: 10px;
+        font-family: 'Fredericka the Great', serif !important;
+        color: #A9B709 !important;
+        font-size: 48px !important;
+        font-weight: normal !important;
+        margin-top: 15px !important;
+        margin-bottom: 5px !important;
     }
     </style>
+    <h1 class="titulo-personalizado">Búsqueda Avanzada - Colección BAFC-H</h1>
     """,
     unsafe_allow_html=True
 )
 
-
-# 2. Mostramos el logo oficial en pantalla
-st.image("logo_BAFCH.JPG", width=150) # Podés cambiar el número 150 para achicarlo o agrandarlo
-
-# 3. Título institucional sin emojis de plantas
-# El nuevo título con el diseño aplicado
-st.markdown('<h1 class="titulo-personalizado">Búsqueda Avanzada - Colección BAFC-H</h1>', unsafe_allow_html=True)
 st.markdown("Bienvenido al portal de consulta pública.")
 
 # Conexión a la base de datos
