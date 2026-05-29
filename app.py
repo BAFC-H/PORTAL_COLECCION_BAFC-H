@@ -1,4 +1,10 @@
 import streamlit as st
+import mysql.connector
+import pandas as pd
+
+# 1. Configuración visual de la pestaña (podés dejar un hongo de ícono temporal o usar el logo)
+st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wide")
+
 # Traer la tipografía Fredericka the Great y aplicar el color al título
 st.markdown(
     """
@@ -15,11 +21,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-import mysql.connector
-import pandas as pd
 
-# 1. Configuración visual de la pestaña (podés dejar un hongo de ícono temporal o usar el logo)
-st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wide")
 
 # 2. Mostramos el logo oficial en pantalla
 st.image("logo_BAFCH.JPG", width=150) # Podés cambiar el número 150 para achicarlo o agrandarlo
