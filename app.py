@@ -140,7 +140,7 @@ st.markdown(
     """
     <div style="text-align: center; margin-top: 50px;">
         <p style="color: #826F52; font-size: 16px;">
-            <strong>Colección BAFC-H</strong> - Instituto de Micología y Botánica (InMiBo)
+            <strong>Colección BAFC-H</strong> - Faculta de Ciencias Exactas y Naturales, UBA - Instituto de Micología y Botánica (InMiBo)
         </p>
         <p style="color: #3E362E; font-size: 14px;">
             Desarrollo y diseño de Base de Datos por <strong>Susana Pereira</strong>.
