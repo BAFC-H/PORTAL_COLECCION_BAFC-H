@@ -120,6 +120,7 @@ if criterio:
         SELECT CatalogNumber, previousIdentifications, ScientificName, recordedBy, Locality, Country
         FROM BAFCH_Darwincore_principal 
         WHERE {" AND ".join(condiciones_and)}
+        LIMIT 5000
         """
         
         # Ejecutamos la consulta (usamos tuple() por seguridad con MySQL)
