@@ -8,13 +8,22 @@ st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wid
 # 2. Mostramos el logo oficial en pantalla
 st.image("logo_BAFCH.JPG", width=150)
 
-# 3. Título institucional con tipografía y color personalizados
+# 3. Título institucional Y TEXTURA DE FONDO
 st.markdown(
     """
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    
     <style>
+    /* Aplicar la textura de fondo a toda la aplicación */
+    .stApp {
+        background-image: url("FONDO.png");
+        background-repeat: repeat;
+        background-size: auto;
+    }
+    
+    /* Estilo del título */
     .titulo-personalizado {
         font-family: 'Fredericka the Great', serif !important;
         color: #A9B709 !important;
@@ -24,6 +33,7 @@ st.markdown(
         margin-bottom: 5px !important;
     }
     </style>
+    
     <h1 class="titulo-personalizado">Búsqueda Avanzada - Colección BAFC-H</h1>
     """,
     unsafe_allow_html=True
