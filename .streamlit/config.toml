@@ -1,0 +1,15 @@
+[theme]
+# El color principal para botones y acentos (un verde musgo/oliva como el de tus logos)
+primaryColor = "#5E6C58"
+
+# El color de fondo principal (un beige clarito parecido a tu papel)
+backgroundColor = "#F4F0EA"
+
+# El color de fondo secundario para menús laterales o tablas (un beige apenitas más oscuro)
+secondaryBackgroundColor = "#E8E1D5"
+
+# El color del texto (un marrón muy oscuro/gris, mejor que el negro puro para lectura)
+textColor = "#3E362E"
+
+# La tipografía (Streamlit tiene 3 opciones: "sans serif", "serif" o "monospace". "serif" es la más parecida a la de tu Wix)
+font = "serif"
