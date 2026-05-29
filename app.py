@@ -1,4 +1,20 @@
 import streamlit as st
+# Traer la tipografía Fredericka the Great y aplicar el color al título
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    
+    .titulo-personalizado {
+        font-family: 'Fredericka the Great', serif;
+        color: #A9B709;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 import mysql.connector
 import pandas as pd
 
@@ -9,7 +25,8 @@ st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wid
 st.image("logo_BAFCH.JPG", width=150) # Podés cambiar el número 150 para achicarlo o agrandarlo
 
 # 3. Título institucional sin emojis de plantas
-st.title("Búsqueda Avanzada - Colección BAFC-H")
+# El nuevo título con el diseño aplicado
+st.markdown('<h1 class="titulo-personalizado">Búsqueda Avanzada - Colección BAFC-H</h1>', unsafe_allow_html=True)
 st.markdown("Bienvenido al portal de consulta pública.")
 
 # Conexión a la base de datos
