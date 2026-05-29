@@ -6,10 +6,9 @@ import pandas as pd
 st.set_page_config(page_title="Colección BAFC-H", page_icon="🍄", layout="wide")
 
 # 2. Mostramos el logo oficial en pantalla
-# Nota: Streamlit genera un contenedor para esta imagen que estilaremos abajo
 st.image("logo_BAFCH.JPG", width=150)
 
-# 3. Título institucional Y DISEÑO DE FONDO/LOGO
+# 3. Diseño total: Título, fondo, logo y carteles
 st.markdown(
     """
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,16 +33,31 @@ st.markdown(
         margin-bottom: 5px !important;
     }
 
-    /* --- NUEVO: Estilo específico para el LOGO --- */
-    /* Apuntamos a la imagen dentro del contenedor de Streamlit */
+    /* Estilo específico para el LOGO */
     div[data-testid="stImage"] img {
-        border: 3px solid #826F52 !important; /* El color de borde solicitado */
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3) !important; /* La sombra solicitada */
-        border-radius: 5px !important; /* Opcional: suaviza las esquinas del borde */
-        padding: 2px !important; /* Opcional: separa la imagen del borde un poquito */
+        border: 3px solid #826F52 !important;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3) !important;
+        border-radius: 5px !important;
+        padding: 2px !important;
+        background-color: white !important; /* Por si el logo tiene fondo transparente */
     }
-    /* -------------------------------------------- */
-
+    
+    /* Fondo del cartel de información (st.info) */
+    div[data-testid="stAlert"] {
+        background-color: #826F52 !important;
+        border: none !important;
+    }
+    
+    /* Texto adentro del cartel */
+    div[data-testid="stAlert"] p {
+        color: #A9B709 !important;
+        font-weight: bold !important;
+    }
+    
+    /* Color del iconito de información */
+    div[data-testid="stAlert"] svg {
+        fill: #A9B709 !important;
+    }
     </style>
     
     <h1 class="titulo-personalizado">Búsqueda Avanzada - Colección BAFC-H</h1>
